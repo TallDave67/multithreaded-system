@@ -1,0 +1,8 @@
+#ifndef RECEIVER_CONSTANTS_H
+#define RECEIVER_CONSTANTS_H
+
+namespace CR
+{
+}
+
+#endif //RECEIVER_CONSTANTS_H

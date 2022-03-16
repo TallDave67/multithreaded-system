@@ -1,0 +1,4 @@
+multithreaded-engine/build/
+multithreaded-engine/io/output/output.txt
+multithreaded-test/build/
+.vscode/
