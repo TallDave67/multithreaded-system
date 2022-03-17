@@ -11,7 +11,7 @@ include_directories(
   src/driver
   src/lock
   src/receiver
-  src/cr_thread
+  src/thread_wrapper
   src/transmitter
 )
 

@@ -10,7 +10,7 @@ include_directories(
   ../multithreaded-engine/src/driver
   ../multithreaded-engine/src/lock
   ../multithreaded-engine/src/receiver
-  ../multithreaded-engine/src/cr_thread
+  ../multithreaded-engine/src/thread_wrapper
   ../multithreaded-engine/src/transmitter
 )
 
@@ -34,7 +34,7 @@ add_executable(multithreaded-test
   test/driver/driver_test.cpp
   test/lock/lock_test.cpp
   test/receiver/receiver_test.cpp
-  test/cr_thread/cr_thread_test.cpp
+  test/thread_wrapper/thread_wrapper_test.cpp
   test/transmitter/transmitter_test.cpp
 )
 

@@ -1,5 +1,5 @@
 #include "gtest/gtest.h"
-#include "cr_thread.h"
+#include "thread_wrapper.h"
 
 // Test
 TEST(CrThreadTest, IsTrue)

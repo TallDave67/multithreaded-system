@@ -20,7 +20,7 @@ namespace CR
     {
         for(int i = 0; i < CR::num_threads; i++)
         {
-            threads.push_back(CR::Thread());
+            threads.push_back(CR::ThreadWrapper());
         }
         return true;
     }
@@ -33,7 +33,7 @@ namespace CR
             //
             std::thread::native_handle_type hid = t.get_native_handle();
             std::stringstream ss;
-            ss << "cr_thread (wrapper " << t.get_wrapper_id() << ") with (id " << t.get_id() << ") with (native handle " << hid << ") is running" << std::endl;
+            ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") with (id " << t.get_id() << ") with (native handle " << hid << ") is running" << std::endl;
             std::cout << ss.str();
         }
 
@@ -42,7 +42,7 @@ namespace CR
         {
             t.wait();
             std::stringstream ss;
-            ss << "cr_thread (wrapper " << t.get_wrapper_id() << ") is terminated" << std::endl;
+            ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") is terminated" << std::endl;
             std::cout << ss.str();
         }
         */
@@ -52,7 +52,7 @@ namespace CR
         {
             t.detach();
             std::stringstream ss;
-            ss << "cr_thread (wrapper " << t.get_wrapper_id() << ") is detached" << std::endl;
+            ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") is detached" << std::endl;
             std::cout << ss.str();
         }
         

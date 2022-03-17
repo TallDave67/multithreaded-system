@@ -15,7 +15,7 @@ cmake ../
 cp "../../multithreaded-engine/build/src/db/libmultithreaded-engine-src-db.a" lib/.
 cp "../../multithreaded-engine/build/src/lock/libmultithreaded-engine-src-lock.a" lib/.
 cp "../../multithreaded-engine/build/src/receiver/libmultithreaded-engine-src-receiver.a" lib/.
-cp "../../multithreaded-engine/build/src/cr_thread/libmultithreaded-engine-src-cr_thread.a" lib/.
+cp "../../multithreaded-engine/build/src/thread_wrapper/libmultithreaded-engine-src-thread_wrapper.a" lib/.
 cp "../../multithreaded-engine/build/src/transmitter/libmultithreaded-engine-src-transmitter.a" lib/.
 
 # ... and add their names to end of the one-line list of library files in the link.txt file
@@ -24,7 +24,7 @@ LIBRARIES="\
 lib/libmultithreaded-engine-src-db.a \
 lib/libmultithreaded-engine-src-lock.a \
 lib/libmultithreaded-engine-src-receiver.a \
-lib/libmultithreaded-engine-src-cr_thread.a \
+lib/libmultithreaded-engine-src-thread_wrapper.a \
 lib/libmultithreaded-engine-src-transmitter.a " 
 echo -n $LIBRARIES >> ./CMakeFiles/multithreaded-test.dir/link.txt
 

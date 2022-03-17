@@ -1,27 +1,27 @@
 #ifndef _THREAD_H_
 #define _THREAD_H_
 
-#include "cr_thread_constants.h"
+#include "thread_wrapper_constants.h"
 #include <functional>
 #include <thread>
 
 namespace CR
 {
-    class Thread
+    class ThreadWrapper
     {
         static int max_wrapper_id;
 
     public:
-        Thread();
-        ~Thread();
+        ThreadWrapper();
+        ~ThreadWrapper();
 
         //delete the copy constructor and copy assignment operator
-        Thread(const Thread&) = delete;
-        Thread& operator=(const Thread&) = delete;
+        ThreadWrapper(const ThreadWrapper&) = delete;
+        ThreadWrapper& operator=(const ThreadWrapper&) = delete;
 
         //create defauls of the move constructor and move assignment operator
-        Thread(Thread&&) noexcept = default;
-        Thread& operator=(Thread&&) noexcept = default;
+        ThreadWrapper(ThreadWrapper&&) noexcept = default;
+        ThreadWrapper& operator=(ThreadWrapper&&) noexcept = default;
 
         void run();
         void wait();

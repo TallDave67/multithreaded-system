@@ -1,7 +1,7 @@
 #ifndef _DRIVER_H_
 #define _DRIVER_H_
 
-#include "cr_thread.h"
+#include "thread_wrapper.h"
 #include <vector>
 
 namespace CR
@@ -16,7 +16,7 @@ namespace CR
         void run();
 
     private:
-        std::vector<CR::Thread> threads;
+        std::vector<CR::ThreadWrapper> threads;
     };
 }
 

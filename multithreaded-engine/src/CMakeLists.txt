@@ -7,14 +7,14 @@ add_subdirectory(db)
 add_subdirectory(driver)
 add_subdirectory(lock)
 add_subdirectory(receiver)
-add_subdirectory(cr_thread)
+add_subdirectory(thread_wrapper)
 add_subdirectory(transmitter)
 include_directories(
   db
   driver
   lock
   receiver
-  cr_thread
+  thread_wrapper
   transmitter
 )
 
@@ -30,6 +30,6 @@ target_link_libraries(multithreaded-engine-src
   multithreaded-engine-src-driver
   multithreaded-engine-src-lock
   multithreaded-engine-src-receiver
-  multithreaded-engine-src-cr_thread
+  multithreaded-engine-src-thread_wrapper
   multithreaded-engine-src-transmitter
 )

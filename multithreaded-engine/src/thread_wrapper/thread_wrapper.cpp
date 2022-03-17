@@ -1,4 +1,4 @@
-#include "cr_thread.h"
+#include "thread_wrapper.h"
 #include <thread>
 #include <iostream>
 #include <chrono>
@@ -8,20 +8,20 @@ using namespace std::chrono_literals;
 
 namespace CR
 {
-    int Thread::max_wrapper_id = 0;
+    int ThreadWrapper::max_wrapper_id = 0;
 
-    Thread::Thread()
+    ThreadWrapper::ThreadWrapper()
         : thread_ptr(nullptr), done(false)
     {
-        Thread::max_wrapper_id++;
-        wrapper_id = Thread::max_wrapper_id;
+        ThreadWrapper::max_wrapper_id++;
+        wrapper_id = ThreadWrapper::max_wrapper_id;
     }
 
-    Thread::~Thread()
+    ThreadWrapper::~ThreadWrapper()
     {
         if(thread_ptr)
         {
-            std::cout << "cr_thread (wrapper " << get_wrapper_id() << ") has an std::thread to destroy" << std::endl;
+            std::cout << "thread_wrapper (wrapper " << get_wrapper_id() << ") has an std::thread to destroy" << std::endl;
             if(thread_ptr->joinable())
             {
                 std::cout << "    the std::thread is joinable, so we must join it before destruction" << std::endl;
@@ -31,18 +31,18 @@ namespace CR
         }
     }
 
-    void Thread::run()
+    void ThreadWrapper::run()
     {
         auto &done_l = done;
         thread_ptr = new std::thread(
             [&done_l]()
             {
                 std::stringstream ss;
-                ss << "    cr_thread (id " << std::this_thread::get_id() << ") is alive" << std::endl;
+                ss << "    thread_wrapper (id " << std::this_thread::get_id() << ") is alive" << std::endl;
                 std::cout << ss.str();
                 std::this_thread::sleep_for(1000ms);
                 ss.str("");
-                ss << "    cr_thread (id " << std::this_thread::get_id() << ") is waking up" << std::endl;
+                ss << "    thread_wrapper (id " << std::this_thread::get_id() << ") is waking up" << std::endl;
                 std::cout << ss.str();
                 done_l = true;
                 return 0;
@@ -50,37 +50,37 @@ namespace CR
         );
     }
 
-    void Thread::wait()
+    void ThreadWrapper::wait()
     {
         if(thread_ptr) thread_ptr->join();
     }
 
-    void Thread::detach()
+    void ThreadWrapper::detach()
     {
         if(thread_ptr) thread_ptr->detach();
     }
 
-    bool Thread::is_done()
+    bool ThreadWrapper::is_done()
     {
         std::stringstream ss;
-        ss << "cr_thread (wrapper " << get_wrapper_id() << ") is_done = " << done << std::endl;
+        ss << "thread_wrapper (wrapper " << get_wrapper_id() << ") is_done = " << done << std::endl;
         std::cout << ss.str();
         return done;
     }
 
-    int Thread::get_wrapper_id()
+    int ThreadWrapper::get_wrapper_id()
     {
         return wrapper_id;
     }
 
-    std::thread::id Thread::get_id()
+    std::thread::id ThreadWrapper::get_id()
     {
         std::thread::id tid;
         if(thread_ptr) tid = thread_ptr->get_id();
         return tid;
     }
  
-    std::thread::native_handle_type Thread::get_native_handle()
+    std::thread::native_handle_type ThreadWrapper::get_native_handle()
     {
         std::thread::native_handle_type hid;
         if(thread_ptr) hid = thread_ptr->native_handle();
