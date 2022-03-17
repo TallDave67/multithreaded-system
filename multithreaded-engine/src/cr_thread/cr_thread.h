@@ -15,6 +15,14 @@ namespace CR
         Thread();
         ~Thread();
 
+        //delete the copy constructor and copy assignment operator
+        Thread(const Thread&) = delete;
+        Thread& operator=(const Thread&) = delete;
+
+        //create defauls of the move constructor and move assignment operator
+        Thread(Thread&&) noexcept = default;
+        Thread& operator=(Thread&&) noexcept = default;
+
         void run();
         void wait();
         void detach();
