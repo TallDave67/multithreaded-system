@@ -18,6 +18,7 @@ namespace CR
         void wait();
 
         std::thread::id get_id();
+        std::thread::native_handle_type get_native_handle();
 
     private:
         std::function<int()> thread_ftn;

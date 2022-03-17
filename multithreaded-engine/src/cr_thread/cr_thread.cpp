@@ -35,4 +35,10 @@ namespace CR
         return tid;
     }
  
+    std::thread::native_handle_type Thread::get_native_handle()
+    {
+        std::thread::native_handle_type hid;
+        if(thread_ptr) hid = thread_ptr->native_handle();
+        return hid;
+    }
 }

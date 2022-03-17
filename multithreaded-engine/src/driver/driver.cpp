@@ -41,8 +41,10 @@ namespace CR
         for(auto & t : threads)
         {
             t.run();
+            //
+            std::thread::native_handle_type hid = t.get_native_handle();
             std::stringstream ss;
-            ss << "cr_thread (" << t.get_id() << ") is running" << std::endl;
+            ss << "cr_thread (" << t.get_id() << ") with (native handle = " << hid << ") is running" << std::endl;
             std::cout << ss.str();
         }
 
