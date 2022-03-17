@@ -12,11 +12,7 @@ namespace CR
         Receiver();
         ~Receiver();
 
-        bool init();
-        void run();
-
     private:
-        std::vector<CR::Thread> threads;
     };
 }
 

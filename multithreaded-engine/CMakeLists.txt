@@ -8,15 +8,13 @@ add_subdirectory(src)
 include_directories(
   src
   src/db
+  src/driver
   src/lock
   src/receiver
   src/cr_thread
   src/transmitter
 )
 
-find_package( OpenCV REQUIRED )
-include_directories( ${OpenCV_INCLUDE_DIRS} )
-
 add_executable(multithreaded-engine main.cpp)
 
-target_link_libraries(multithreaded-engine multithreaded-engine-src ${OpenCV_LIBS})
+target_link_libraries(multithreaded-engine multithreaded-engine-src)

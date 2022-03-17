@@ -3,6 +3,7 @@
 
 #include "cr_thread_constants.h"
 #include <functional>
+#include <thread>
 
 namespace CR
 {
@@ -12,11 +13,15 @@ namespace CR
         Thread();
         ~Thread();
 
-        bool init(std::function<int()> _thread_ftn);
+        void init(std::function<int()> _thread_ftn);
         void run();
+        void wait();
+
+        std::thread::id get_id();
 
     private:
         std::function<int()> thread_ftn;
+        std::thread* thread_ptr;
     };
 }
 

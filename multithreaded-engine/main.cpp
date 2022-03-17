@@ -1,5 +1,5 @@
 #include <iostream>
-#include "receiver.h"
+#include "driver.h"
 
 int main(int argc, char **argv)
 {
@@ -9,14 +9,14 @@ int main(int argc, char **argv)
         return -1;
     }
 
-    CR::Receiver receiver;
-    if (receiver.init())
+    CR::Driver driver;
+    if (driver.init())
     {
-        receiver.run();
-        std::cout << "receiver ran" << std::endl;
+        driver.run();
+        std::cout << "driver ran" << std::endl;
         return 0;
     }
 
-    std::cout << "receiver did not run" << std::endl;
+    std::cout << "driver did not run" << std::endl;
     return -1;
 }

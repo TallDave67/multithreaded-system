@@ -1,2 +1,16 @@
-hello from cr_thread 1
-receiver ran
+cr_thread (140450018911808) is running
+cr_thread (140450010519104) is running
+cr_thread (140450002126400) is running
+    hello from cr_thread (140450010519104)
+    hello from cr_thread (140450018911808)
+    hello from cr_thread (140450002126400)
+cr_thread (140449993733696) is running
+cr_thread (140449985340992) is running
+    hello from cr_thread (140449993733696)
+    hello from cr_thread (140449985340992)
+cr_thread (thread::id of a non-executing thread) is terminated
+cr_thread (thread::id of a non-executing thread) is terminated
+cr_thread (thread::id of a non-executing thread) is terminated
+cr_thread (thread::id of a non-executing thread) is terminated
+cr_thread (thread::id of a non-executing thread) is terminated
+driver ran

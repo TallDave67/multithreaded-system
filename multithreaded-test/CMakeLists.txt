@@ -7,6 +7,7 @@ set(CMAKE_VERBOSE_MAKEFILE ON)
 include_directories(
   ../multithreaded-engine/src
   ../multithreaded-engine/src/db
+  ../multithreaded-engine/src/driver
   ../multithreaded-engine/src/lock
   ../multithreaded-engine/src/receiver
   ../multithreaded-engine/src/cr_thread
@@ -30,6 +31,7 @@ FetchContent_MakeAvailable(googletest)
 add_executable(multithreaded-test 
   main.cpp 
   test/db/db_test.cpp
+  test/driver/driver_test.cpp
   test/lock/lock_test.cpp
   test/receiver/receiver_test.cpp
   test/cr_thread/cr_thread_test.cpp

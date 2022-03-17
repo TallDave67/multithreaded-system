@@ -69,6 +69,11 @@ std::move does not move data, it just casts its argument to an "rvalue reference
 and we now have a move constructor and a move assignment operator
 
 ================
+std::ref (C++11)
+================
+generate a reference wrapper to an lvalue reference
+
+================
 noexcept (C++11)
 ================
 function promises it will not throw an exception
@@ -157,44 +162,14 @@ coroutines
 joining threads
 improved synchronization facilities
 
+================
+thread functions
+================
+std::this_thread::sleep_for (C++11)
+std::this_thread::get_id (C++11)
+std::thread::native_handle (C++11)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+=================
+thread exceptions
+=================
+each execution thread has its own stack, therefore exceptions can only be handled in the thread for which they occur
