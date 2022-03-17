@@ -13,16 +13,17 @@ namespace CR
         Thread();
         ~Thread();
 
-        void init(std::function<int()> _thread_ftn);
         void run();
         void wait();
+        void detach();
+        bool is_done();
 
         std::thread::id get_id();
         std::thread::native_handle_type get_native_handle();
 
     private:
-        std::function<int()> thread_ftn;
         std::thread* thread_ptr;
+        bool done;
     };
 }
 

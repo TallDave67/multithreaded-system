@@ -20,18 +20,7 @@ namespace CR
     {
         for(int i = 0; i < CR::num_threads; i++)
         {
-            CR::Thread crt;
-            crt.init(
-                []()
-                {
-                    std::stringstream ss;
-                    ss << "    hello from cr_thread (" << std::this_thread::get_id() << ")" << std::endl;
-                    std::cout << ss.str();
-                    std::this_thread::sleep_for(50ms);
-                    return 0;
-                }
-            );
-            threads.push_back(std::move(crt));
+            threads.push_back(CR::Thread());
         }
         return true;
     }
@@ -48,6 +37,7 @@ namespace CR
             std::cout << ss.str();
         }
 
+        /*
         for(auto & t : threads)
         {
             t.wait();
@@ -55,6 +45,35 @@ namespace CR
             ss << "cr_thread (" << t.get_id() << ") is terminated" << std::endl;
             std::cout << ss.str();
         }
+        */
+
+        
+        for(auto & t : threads)
+        {
+            t.detach();
+            std::stringstream ss;
+            ss << "cr_thread (" << t.get_id() << ") is detached" << std::endl;
+            std::cout << ss.str();
+        }
+
+        bool done = false;
+        while(!done)
+        {
+            std::this_thread::sleep_for(50ms);
+            done = true;
+            for(auto & t : threads)
+            {
+                if(!t.is_done())
+                {
+                    done = false;
+                    break;
+                }
+            }
+        }
+        std::stringstream ss;
+        ss << "all child threads are done" << std::endl;
+        std::cout << ss.str();
+
     }
 
 }
