@@ -33,7 +33,7 @@ namespace CR
             //
             std::thread::native_handle_type hid = t.get_native_handle();
             std::stringstream ss;
-            ss << "cr_thread (" << t.get_id() << ") with (native handle = " << hid << ") is running" << std::endl;
+            ss << "cr_thread (wrapper " << t.get_wrapper_id() << ") with (id " << t.get_id() << ") with (native handle " << hid << ") is running" << std::endl;
             std::cout << ss.str();
         }
 
@@ -42,7 +42,7 @@ namespace CR
         {
             t.wait();
             std::stringstream ss;
-            ss << "cr_thread (" << t.get_id() << ") is terminated" << std::endl;
+            ss << "cr_thread (wrapper " << t.get_wrapper_id() << ") is terminated" << std::endl;
             std::cout << ss.str();
         }
         */
@@ -52,9 +52,10 @@ namespace CR
         {
             t.detach();
             std::stringstream ss;
-            ss << "cr_thread (" << t.get_id() << ") is detached" << std::endl;
+            ss << "cr_thread (wrapper " << t.get_wrapper_id() << ") is detached" << std::endl;
             std::cout << ss.str();
         }
+        
 
         bool done = false;
         while(!done)

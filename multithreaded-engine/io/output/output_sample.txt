@@ -1,16 +1,51 @@
-cr_thread (140325734098496) with (native handle = 140325734098496) is running
-    hello from cr_thread (140325734098496)
-cr_thread (140325725705792) with (native handle = 140325725705792) is running
-    hello from cr_thread (140325725705792)
-cr_thread (140325717313088) with (native handle = 140325717313088) is running
-    hello from cr_thread (140325717313088)
-cr_thread (140325641254464) with (native handle = 140325641254464) is running
-    hello from cr_thread (140325641254464)
-cr_thread (140325632861760) with (native handle = 140325632861760) is running
-    hello from cr_thread (140325632861760)
-cr_thread (thread::id of a non-executing thread) is terminated
-cr_thread (thread::id of a non-executing thread) is terminated
-cr_thread (thread::id of a non-executing thread) is terminated
-cr_thread (thread::id of a non-executing thread) is terminated
-cr_thread (thread::id of a non-executing thread) is terminated
+cr_thread (wrapper 1) with (id 140633760360000) with (native handle 140633760360000) is running
+cr_thread (wrapper 2) with (id 140633751967296) with (native handle 140633751967296) is running
+cr_thread (wrapper 3) with (id 140633743574592) with (native handle 140633743574592) is running
+    cr_thread (id 140633760360000) is alive
+cr_thread (wrapper 4) with (id 140633735181888) with (native handle 140633735181888) is running
+    cr_thread (id 140633751967296) is alive
+    cr_thread (id 140633743574592) is alive
+cr_thread (wrapper 5) with (id 140633726789184) with (native handle 140633726789184) is running
+cr_thread (wrapper 1) is detached
+cr_thread (wrapper 2) is detached
+cr_thread (wrapper 3) is detached
+cr_thread (wrapper 4) is detached
+    cr_thread (id 140633735181888) is alive
+cr_thread (wrapper 5) is detached
+    cr_thread (id 140633726789184) is alive
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+cr_thread (wrapper 1) is_done = 0
+    cr_thread (id 140633760360000) is waking up
+    cr_thread (id 140633751967296) is waking up
+    cr_thread (id 140633743574592) is waking up
+    cr_thread (id 140633735181888) is waking up
+    cr_thread (id 140633726789184) is waking up
+cr_thread (wrapper 1) is_done = 1
+cr_thread (wrapper 2) is_done = 1
+cr_thread (wrapper 3) is_done = 1
+cr_thread (wrapper 4) is_done = 1
+cr_thread (wrapper 5) is_done = 1
+all child threads are done
 driver ran
+cr_thread (wrapper 1) has an std::thread to destroy
+cr_thread (wrapper 2) has an std::thread to destroy
+cr_thread (wrapper 3) has an std::thread to destroy
+cr_thread (wrapper 4) has an std::thread to destroy
+cr_thread (wrapper 5) has an std::thread to destroy

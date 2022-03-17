@@ -9,6 +9,8 @@ namespace CR
 {
     class Thread
     {
+        static int max_wrapper_id;
+
     public:
         Thread();
         ~Thread();
@@ -18,10 +20,12 @@ namespace CR
         void detach();
         bool is_done();
 
+        int get_wrapper_id();
         std::thread::id get_id();
         std::thread::native_handle_type get_native_handle();
 
     private:
+        int wrapper_id;
         std::thread* thread_ptr;
         bool done;
     };
