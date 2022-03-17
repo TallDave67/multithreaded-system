@@ -27,14 +27,13 @@ namespace CR
                 std::cout << "    the std::thread is joinable, so we must join it before destruction" << std::endl;
                 thread_ptr->join();
             }
-            delete thread_ptr;
         }
     }
 
     void ThreadWrapper::run()
     {
         auto &done_l = done;
-        thread_ptr = new std::thread(
+        thread_ptr = std::make_unique<std::thread>(
             [&done_l]()
             {
                 std::stringstream ss;

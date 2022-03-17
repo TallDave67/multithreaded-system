@@ -4,6 +4,7 @@
 #include "thread_wrapper_constants.h"
 #include <functional>
 #include <thread>
+#include <memory>
 
 namespace CR
 {
@@ -34,7 +35,7 @@ namespace CR
 
     private:
         int wrapper_id;
-        std::thread* thread_ptr;
+        std::unique_ptr<std::thread> thread_ptr;
         bool done;
     };
 }
