@@ -13,7 +13,7 @@ cmake ../
 
 # manually copy over the library files we need to a folder in this build ...
 cp "../../multithreaded-engine/build/src/db/libmultithreaded-engine-src-db.a" lib/.
-cp "../../multithreaded-engine/build/src/lock/libmultithreaded-engine-src-lock.a" lib/.
+cp "../../multithreaded-engine/build/src/util/libmultithreaded-engine-src-util.a" lib/.
 cp "../../multithreaded-engine/build/src/receiver/libmultithreaded-engine-src-receiver.a" lib/.
 cp "../../multithreaded-engine/build/src/thread_wrapper/libmultithreaded-engine-src-thread_wrapper.a" lib/.
 cp "../../multithreaded-engine/build/src/transmitter/libmultithreaded-engine-src-transmitter.a" lib/.
@@ -22,7 +22,7 @@ cp "../../multithreaded-engine/build/src/transmitter/libmultithreaded-engine-src
 truncate --size -1 ./CMakeFiles/multithreaded-test.dir/link.txt
 LIBRARIES="\
 lib/libmultithreaded-engine-src-db.a \
-lib/libmultithreaded-engine-src-lock.a \
+lib/libmultithreaded-engine-src-util.a \
 lib/libmultithreaded-engine-src-receiver.a \
 lib/libmultithreaded-engine-src-thread_wrapper.a \
 lib/libmultithreaded-engine-src-transmitter.a " 

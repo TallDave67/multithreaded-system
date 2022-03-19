@@ -8,10 +8,10 @@ include_directories(
   ../multithreaded-engine/src
   ../multithreaded-engine/src/db
   ../multithreaded-engine/src/driver
-  ../multithreaded-engine/src/lock
   ../multithreaded-engine/src/receiver
   ../multithreaded-engine/src/thread_wrapper
   ../multithreaded-engine/src/transmitter
+  ../multithreaded-engine/src/util
 )
 
 set(CMAKE_PREFIX_PATH "${CMAKE_CURRENT_BUILD_DIR}/lib")
@@ -32,10 +32,10 @@ add_executable(multithreaded-test
   main.cpp 
   test/db/db_test.cpp
   test/driver/driver_test.cpp
-  test/lock/lock_test.cpp
   test/receiver/receiver_test.cpp
   test/thread_wrapper/thread_wrapper_test.cpp
   test/transmitter/transmitter_test.cpp
+  test/util/util_test.cpp
 )
 
 target_link_libraries(multithreaded-test 

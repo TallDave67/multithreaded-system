@@ -4,7 +4,6 @@ project(multithreaded-engine-src-receiver)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 include_directories(
-  ../thread_wrapper
 )
 
 add_library(multithreaded-engine-src-receiver

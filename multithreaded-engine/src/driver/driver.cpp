@@ -1,9 +1,9 @@
 #include "driver.h"
 #include "driver_constants.h"
 #include <iostream>
-#include <chrono>
 #include <sstream>
 
+#include <chrono>
 using namespace std::chrono_literals;
 
 namespace CR
@@ -34,8 +34,8 @@ namespace CR
             //
             std::thread::native_handle_type hid = t.get_native_handle();
             std::stringstream ss;
-            ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") with (id " << t.get_id() << ") with (native handle " << hid << ") is running" << std::endl;
-            //std::cout << ss.str();
+            ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") with (id " << t.get_id() << ") with (native handle " << hid << ") is launched" << std::endl;
+            std::cout << ss.str();
         }
 
         /*
@@ -52,8 +52,8 @@ namespace CR
         for(auto & t : threads)
         {
             t.detach();
-            std::stringstream ss;
-            ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") is detached" << std::endl;
+            //std::stringstream ss;
+            //ss << "thread_wrapper (wrapper " << t.get_wrapper_id() << ") is detached" << std::endl;
             //std::cout << ss.str();
         }
         

@@ -9,10 +9,10 @@ include_directories(
   src
   src/db
   src/driver
-  src/lock
   src/receiver
   src/thread_wrapper
   src/transmitter
+  src/util
 )
 
 add_executable(multithreaded-engine main.cpp)

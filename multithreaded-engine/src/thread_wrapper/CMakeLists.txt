@@ -4,6 +4,7 @@ project(multithreaded-engine-src-thread_wrapper)
 set(CMAKE_VERBOSE_MAKEFILE ON)
 
 include_directories(
+  ../util
 )
 
 add_library(multithreaded-engine-src-thread_wrapper

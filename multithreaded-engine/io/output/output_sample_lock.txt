@@ -1,0 +1,259 @@
+create 32 threads
+thread_wrapper (wrapper 1) with (id 139654995445312) with (native handle 139654995445312) is launched
+thread_wrapper (id 139654995445312) is running
+thread_wrapper (wrapper 2) with (id 139654987052608) with (native handle 139654987052608) is launched
+timer (id 1)
+    timepoint got_lock: 40232ns
+    timepoint end: 8756ns
+    total: 48988ns
+thread_wrapper (wrapper 3) with (id 139654978659904) with (native handle 139654978659904) is launched
+thread_wrapper (wrapper 4) with (id 139654970267200) with (native handle 139654970267200) is launched
+thread_wrapper (id 139654978659904) is running
+thread_wrapper (wrapper 5) with (id 139654888158784) with (native handle 139654888158784) is launched
+timer (id 3)
+    timepoint got_lock: 2983ns
+    timepoint end: 7037ns
+    total: 10020ns
+thread_wrapper (id 139654888158784) is running
+timer (id 5)
+    timepoint got_lock: 2539ns
+    timepoint end: 6338ns
+    total: 8877ns
+thread_wrapper (wrapper 6) with (id 139654879766080) with (native handle 139654879766080) is launched
+thread_wrapper (wrapper 7) with (id 139654871373376) with (native handle 139654871373376) is launched
+thread_wrapper (wrapper 8) with (id 139654862980672) with (native handle 139654862980672) is launched
+thread_wrapper (wrapper 9) with (id 139654854587968) with (native handle 139654854587968) is launched
+thread_wrapper (id 139654871373376) is running
+timer (id 7)
+    timepoint got_lock: 2356ns
+    timepoint end: 4764ns
+    total: 7120ns
+thread_wrapper (wrapper 10) with (id 139654846195264) with (native handle 139654846195264) is launched
+thread_wrapper (wrapper 11) with (id 139654837802560) with (native handle 139654837802560) is launched
+thread_wrapper (wrapper 12) with (id 139654829409856) with (native handle 139654829409856) is launched
+thread_wrapper (wrapper 13) with (id 139654821017152) with (native handle 139654821017152) is launched
+thread_wrapper (id 139654837802560) is running
+timer (id 11)
+    timepoint got_lock: 1917ns
+    timepoint end: 5675ns
+    total: 7592ns
+thread_wrapper (wrapper 14) with (id 139654812624448) with (native handle 139654812624448) is launched
+thread_wrapper (wrapper 15) with (id 139654804231744) with (native handle 139654804231744) is launched
+thread_wrapper (id 139654804231744) is running
+timer (id 15)
+    timepoint got_lock: 1659ns
+    timepoint end: 4193ns
+    total: 5852ns
+thread_wrapper (id 139654846195264) is running
+timer (id 10)
+    timepoint got_lock: 2579ns
+    timepoint end: 6485ns
+    total: 9064ns
+thread_wrapper (wrapper 16) with (id 139654795839040) with (native handle 139654795839040) is launched
+thread_wrapper (id 139654829409856) is running
+timer (id 12)
+    timepoint got_lock: 48870ns
+    timepoint end: 10679ns
+    total: 59549ns
+thread_wrapper (wrapper 17) with (id 139654686832192) with (native handle 139654686832192) is launched
+thread_wrapper (id 139654686832192) is running
+timer (id 17)
+    timepoint got_lock: 2028ns
+    timepoint end: 8453ns
+    total: 10481ns
+thread_wrapper (wrapper 18) with (id 139654787446336) with (native handle 139654787446336) is launched
+thread_wrapper (wrapper 19) with (id 139654779053632) with (native handle 139654779053632) is launched
+thread_wrapper (id 139654821017152) is running
+timer (id 13)
+    timepoint got_lock: 62799ns
+    timepoint end: 8712ns
+    total: 71511ns
+thread_wrapper (wrapper 20) with (id 139654770660928) with (native handle 139654770660928) is launched
+thread_wrapper (id 139654970267200) is running
+timer (id 4)
+    timepoint got_lock: 2451ns
+    timepoint end: 9043ns
+    total: 11494ns
+thread_wrapper (id 139654779053632) is running
+timer (id 19)
+    timepoint got_lock: 2076ns
+    timepoint end: 6574ns
+    total: 8650ns
+thread_wrapper (wrapper 21) with (id 139654678439488) with (native handle 139654678439488) is launched
+thread_wrapper (id 139654787446336) is running
+timer (id 18)
+    timepoint got_lock: 1538ns
+    timepoint end: 4121ns
+    total: 5659ns
+thread_wrapper (wrapper 22) with (id 139654670046784) with (native handle 139654670046784) is launched
+thread_wrapper (id 139654670046784) is running
+timer (id 22)
+    timepoint got_lock: 1793ns
+    timepoint end: 4111ns
+    total: 5904ns
+thread_wrapper (id 139654678439488) is running
+thread_wrapper (wrapper 23) with (id 139654661654080) with (native handle 139654661654080) is launched
+timer (id 21)
+    timepoint got_lock: 2603ns
+    timepoint end: 87676ns
+    total: 90279ns
+thread_wrapper (id 139654770660928) is running
+thread_wrapper (id 139654987052608) is running
+timer (id 2)
+    timepoint got_lock: 85102ns
+    timepoint end: 10114ns
+    total: 95216ns
+thread_wrapper (id 139654661654080) is running
+timer (id 23)
+    timepoint got_lock: 121868ns
+    timepoint end: 4426ns
+    total: 126294ns
+timer (id 20)
+    timepoint got_lock: 93348ns
+    timepoint end: 11834ns
+    total: 105182ns
+thread_wrapper (wrapper 24) with (id 139654653261376) with (native handle 139654653261376) is launched
+thread_wrapper (id 139654653261376) is running
+timer (id 24)
+    timepoint got_lock: 2072ns
+    timepoint end: 3827ns
+    total: 5899ns
+thread_wrapper (wrapper 25) with (id 139654644868672) with (native handle 139654644868672) is launched
+thread_wrapper (id 139654644868672) is running
+timer (id 25)
+    timepoint got_lock: 1665ns
+    timepoint end: 3916ns
+    total: 5581ns
+thread_wrapper (wrapper 26) with (id 139654636475968) with (native handle 139654636475968) is launched
+thread_wrapper (id 139654636475968) is running
+timer (id 26)
+    timepoint got_lock: 1601ns
+    timepoint end: 3723ns
+    total: 5324ns
+thread_wrapper (wrapper 27) with (id 139654552614464) with (native handle 139654552614464) is launched
+thread_wrapper (id 139654552614464) is running
+timer (id 27)
+    timepoint got_lock: 1575ns
+    timepoint end: 3760ns
+    total: 5335ns
+thread_wrapper (id 139654854587968) is running
+thread_wrapper (wrapper 28) with (id 139654544221760) with (native handle 139654544221760) is launched
+timer (id 9)
+    timepoint got_lock: 3183ns
+    timepoint end: 7949ns
+    total: 11132ns
+thread_wrapper (id 139654544221760) is running
+timer (id 28)
+    timepoint got_lock: 1475ns
+    timepoint end: 3980ns
+    total: 5455ns
+thread_wrapper (wrapper 29) with (id 139654535829056) with (native handle 139654535829056) is launched
+thread_wrapper (id 139654535829056) is running
+timer (id 29)
+    timepoint got_lock: 1310ns
+    timepoint end: 3233ns
+    total: 4543ns
+thread_wrapper (wrapper 30) with (id 139654527436352) with (native handle 139654527436352) is launched
+thread_wrapper (id 139654527436352) is running
+timer (id 30)
+    timepoint got_lock: 1332ns
+    timepoint end: 3811ns
+    total: 5143ns
+thread_wrapper (wrapper 31) with (id 139654519043648) with (native handle 139654519043648) is launched
+thread_wrapper (id 139654519043648) is running
+timer (id 31)
+    timepoint got_lock: 2005ns
+    timepoint end: 4503ns
+    total: 6508ns
+thread_wrapper (wrapper 32) with (id 139654510650944) with (native handle 139654510650944) is launched
+thread_wrapper (id 139654510650944) is running
+timer (id 32)
+    timepoint got_lock: 2291ns
+    timepoint end: 8712ns
+    total: 11003ns
+thread_wrapper (id 139654862980672) is running
+timer (id 8)
+    timepoint got_lock: 3848ns
+    timepoint end: 6496ns
+    total: 10344ns
+thread_wrapper (id 139654812624448) is running
+timer (id 14)
+    timepoint got_lock: 1128ns
+    timepoint end: 3462ns
+    total: 4590ns
+thread_wrapper (id 139654795839040) is running
+timer (id 16)
+    timepoint got_lock: 1058ns
+    timepoint end: 3182ns
+    total: 4240ns
+thread_wrapper (id 139654879766080) is running
+timer (id 6)
+    timepoint got_lock: 6056ns
+    timepoint end: 14398ns
+    total: 20454ns
+thread_wrapper (wrapper 1) is_done = 1
+thread_wrapper (wrapper 2) is_done = 1
+thread_wrapper (wrapper 3) is_done = 1
+thread_wrapper (wrapper 4) is_done = 1
+thread_wrapper (wrapper 5) is_done = 1
+thread_wrapper (wrapper 6) is_done = 1
+thread_wrapper (wrapper 7) is_done = 1
+thread_wrapper (wrapper 8) is_done = 1
+thread_wrapper (wrapper 9) is_done = 1
+thread_wrapper (wrapper 10) is_done = 1
+thread_wrapper (wrapper 11) is_done = 1
+thread_wrapper (wrapper 12) is_done = 1
+thread_wrapper (wrapper 13) is_done = 1
+thread_wrapper (wrapper 14) is_done = 1
+thread_wrapper (wrapper 15) is_done = 1
+thread_wrapper (wrapper 16) is_done = 1
+thread_wrapper (wrapper 17) is_done = 1
+thread_wrapper (wrapper 18) is_done = 1
+thread_wrapper (wrapper 19) is_done = 1
+thread_wrapper (wrapper 20) is_done = 1
+thread_wrapper (wrapper 21) is_done = 1
+thread_wrapper (wrapper 22) is_done = 1
+thread_wrapper (wrapper 23) is_done = 1
+thread_wrapper (wrapper 24) is_done = 1
+thread_wrapper (wrapper 25) is_done = 1
+thread_wrapper (wrapper 26) is_done = 1
+thread_wrapper (wrapper 27) is_done = 1
+thread_wrapper (wrapper 28) is_done = 1
+thread_wrapper (wrapper 29) is_done = 1
+thread_wrapper (wrapper 30) is_done = 1
+thread_wrapper (wrapper 31) is_done = 1
+thread_wrapper (wrapper 32) is_done = 1
+all 32 child threads are done
+driver ran
+thread_wrapper (wrapper 1) has an std::thread to destroy
+thread_wrapper (wrapper 2) has an std::thread to destroy
+thread_wrapper (wrapper 3) has an std::thread to destroy
+thread_wrapper (wrapper 4) has an std::thread to destroy
+thread_wrapper (wrapper 5) has an std::thread to destroy
+thread_wrapper (wrapper 6) has an std::thread to destroy
+thread_wrapper (wrapper 7) has an std::thread to destroy
+thread_wrapper (wrapper 8) has an std::thread to destroy
+thread_wrapper (wrapper 9) has an std::thread to destroy
+thread_wrapper (wrapper 10) has an std::thread to destroy
+thread_wrapper (wrapper 11) has an std::thread to destroy
+thread_wrapper (wrapper 12) has an std::thread to destroy
+thread_wrapper (wrapper 13) has an std::thread to destroy
+thread_wrapper (wrapper 14) has an std::thread to destroy
+thread_wrapper (wrapper 15) has an std::thread to destroy
+thread_wrapper (wrapper 16) has an std::thread to destroy
+thread_wrapper (wrapper 17) has an std::thread to destroy
+thread_wrapper (wrapper 18) has an std::thread to destroy
+thread_wrapper (wrapper 19) has an std::thread to destroy
+thread_wrapper (wrapper 20) has an std::thread to destroy
+thread_wrapper (wrapper 21) has an std::thread to destroy
+thread_wrapper (wrapper 22) has an std::thread to destroy
+thread_wrapper (wrapper 23) has an std::thread to destroy
+thread_wrapper (wrapper 24) has an std::thread to destroy
+thread_wrapper (wrapper 25) has an std::thread to destroy
+thread_wrapper (wrapper 26) has an std::thread to destroy
+thread_wrapper (wrapper 27) has an std::thread to destroy
+thread_wrapper (wrapper 28) has an std::thread to destroy
+thread_wrapper (wrapper 29) has an std::thread to destroy
+thread_wrapper (wrapper 30) has an std::thread to destroy
+thread_wrapper (wrapper 31) has an std::thread to destroy
+thread_wrapper (wrapper 32) has an std::thread to destroy

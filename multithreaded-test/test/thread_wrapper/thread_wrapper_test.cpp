@@ -2,7 +2,7 @@
 #include "thread_wrapper.h"
 
 // Test
-TEST(CrThreadTest, IsTrue)
+TEST(ThreadWrapperTest, IsTrue)
 {
     EXPECT_EQ(1 == 1, true);
 }
