@@ -173,3 +173,19 @@ std::thread::native_handle (C++11)
 thread exceptions
 =================
 each execution thread has its own stack, therefore exceptions can only be handled in the thread for which they occur
+
+====================
+std::jthread (C++20)
+====================
+in its destructor will automatically check to see if join() must be called on thread
+std::jthread::request_stop can be used to prematurely request a thread to stop, but no guarantees that it will
+
+================
+compound objects
+================
+we should make our own types behave like the standard library classes
+
+===================
+optimizing compiler
+===================
+may compile switch statement into branch table

@@ -1,0 +1,65 @@
+/multithreaded-system/multithreaded-engine$ ./build/multithreaded-engine
+begin thread 4: counter_l = 0, counter = 0
+begin thread 3: counter_l = 0, counter = 357
+begin thread 2: counter_l = 0, counter = 4683
+begin thread 0: counter_l = 0, counter = 0
+begin thread 1: counter_l = 0, counter = 7357
+begin thread 5: counter_l = 0, counter = 12646
+begin thread 7: counter_l = 0, counter = 14896
+begin thread 6: counter_l = 0, counter = 16229
+mid thread 4: counter_l = 50001, counter = 35224
+mid thread 0: counter_l = 50001, counter = 39158
+mid thread 3: counter_l = 50001, counter = 45220
+mid thread 1: counter_l = 50001, counter = 64171
+mid thread 2: counter_l = 50001, counter = 70378
+mid thread 6: counter_l = 50001, counter = 72768
+end thread 4: counter_l = 100000, counter = 73004
+end thread 0: counter_l = 100000, counter = 73442
+mid thread 7: counter_l = 50001, counter = 73950
+begin thread 8: counter_l = 0, counter = 75411
+mid thread 5: counter_l = 50001, counter = 79787
+end thread 3: counter_l = 100000, counter = 84917
+mid thread 8: counter_l = 50001, counter = 110009
+end thread 5: counter_l = 100000, counter = 116704
+end thread 1: counter_l = 100000, counter = 117640
+end thread 2: counter_l = 100000, counter = 120946
+end thread 6: counter_l = 100000, counter = 123386
+end thread 7: counter_l = 100000, counter = 124621
+begin thread 9: counter_l = 0, counter = 134268
+end thread 8: counter_l = 100000, counter = 154259
+mid thread 9: counter_l = 50001, counter = 192060
+end thread 9: counter_l = 100000, counter = 242059
+242059
+
+/multithreaded-system/multithreaded-engine$ ./build/multithreaded-engine
+begin thread 0: counter_l = 0, counter = 0
+begin thread 2: counter_l = 0, counter = 0
+begin thread 3: counter_l = 0, counter = 0
+begin thread 1: counter_l = 0, counter = 0
+begin thread 6: counter_l = 0, counter = 0
+begin thread 7: counter_l = 0, counter = 8555
+begin thread 4: counter_l = 0, counter = 0
+begin thread 5: counter_l = 0, counter = 0
+begin thread 8: counter_l = 0, counter = 51322
+mid thread 2: counter_l = 50001, counter = 55310
+mid thread 1: counter_l = 50001, counter = 60633
+mid thread 5: counter_l = 50001, counter = 61439
+mid thread 0: counter_l = 50001, counter = 61450
+mid thread 3: counter_l = 50001, counter = 69107
+mid thread 6: counter_l = 50001, counter = 73429
+mid thread 8: counter_l = 50001, counter = 100046
+end thread 2: counter_l = 100000, counter = 111872
+end thread 5: counter_l = 100000, counter = 111916
+begin thread 9: counter_l = 0, counter = 112985
+end thread 0: counter_l = 100000, counter = 124403
+end thread 3: counter_l = 100000, counter = 126811
+end thread 6: counter_l = 100000, counter = 129647
+end thread 8: counter_l = 100000, counter = 140831
+mid thread 4: counter_l = 50001, counter = 150451
+mid thread 7: counter_l = 50001, counter = 158818
+mid thread 9: counter_l = 50001, counter = 161507
+end thread 1: counter_l = 100000, counter = 162360
+end thread 7: counter_l = 100000, counter = 215999
+end thread 9: counter_l = 100000, counter = 220153
+end thread 4: counter_l = 100000, counter = 221259
+221259

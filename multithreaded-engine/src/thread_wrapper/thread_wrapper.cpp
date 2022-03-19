@@ -9,6 +9,10 @@ using namespace std::chrono_literals;
 namespace CR
 {
     int ThreadWrapper::max_wrapper_id = 0;
+    int ThreadWrapper::get_max_wrapper_id()
+    {
+        return ThreadWrapper::max_wrapper_id;
+    }
 
     ThreadWrapper::ThreadWrapper()
         : thread_ptr(nullptr), done(false)
@@ -21,10 +25,10 @@ namespace CR
     {
         if(thread_ptr)
         {
-            std::cout << "thread_wrapper (wrapper " << get_wrapper_id() << ") has an std::thread to destroy" << std::endl;
+            //std::cout << "thread_wrapper (wrapper " << get_wrapper_id() << ") has an std::thread to destroy" << std::endl;
             if(thread_ptr->joinable())
             {
-                std::cout << "    the std::thread is joinable, so we must join it before destruction" << std::endl;
+                //std::cout << "    the std::thread is joinable, so we must join it before destruction" << std::endl;
                 thread_ptr->join();
             }
         }
@@ -38,11 +42,11 @@ namespace CR
             {
                 std::stringstream ss;
                 ss << "    thread_wrapper (id " << std::this_thread::get_id() << ") is alive" << std::endl;
-                std::cout << ss.str();
-                std::this_thread::sleep_for(1000ms);
+                //std::cout << ss.str();
+                //std::this_thread::sleep_for(1000ms);
                 ss.str("");
                 ss << "    thread_wrapper (id " << std::this_thread::get_id() << ") is waking up" << std::endl;
-                std::cout << ss.str();
+                //std::cout << ss.str();
                 done_l = true;
                 return 0;
             }
@@ -63,7 +67,7 @@ namespace CR
     {
         std::stringstream ss;
         ss << "thread_wrapper (wrapper " << get_wrapper_id() << ") is_done = " << done << std::endl;
-        std::cout << ss.str();
+        //std::cout << ss.str();
         return done;
     }
 

@@ -10,7 +10,11 @@ namespace CR
 {
     class ThreadWrapper
     {
+    private:
         static int max_wrapper_id;
+
+    public:
+        static int get_max_wrapper_id();
 
     public:
         ThreadWrapper();
